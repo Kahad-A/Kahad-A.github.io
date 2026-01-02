@@ -36,11 +36,25 @@ Helps management quickly identify sales trends, high-value customers, and top-pe
 
 
 
-### 2. Excel Data Analysis Dashboard
-- Tools: Excel, Power Query, PivotTables
-- Created a sales dashboard to monitor KPIs
-  
-![FoodHub Dashboard](Sales%20Dashboard.png)
-*Preview of the dashboard that visualizes sales and insights.*
+# FoodHub Order Analysis Dashboard
 
-🔗 [View Project on GitHub](https://github.com/Kahad-A/FoodHub-Order-Analysis)
+**Tools:** Excel, PivotTables, Charts, Slicers  
+
+## Project Overview
+Developed an interactive Excel dashboard to analyze FoodHub orders and uncover trends in customer behavior, order frequency, and product preferences. The dashboard allows filtering by order date, customer type, product category, and region to derive actionable insights.  
+
+## Key Features
+- **Order Trends Over Time:** Tracks monthly and weekly order volumes.  
+- **Top Products & Categories:** Highlights most popular items and categories.  
+- **Customer Segmentation:** Identifies repeat customers and their purchase patterns.  
+- **Interactive Filters:** Users can filter data by date, customer type, product, and region to explore patterns.  
+
+## Impact / Use Case
+Helps FoodHub management and operations teams identify ordering trends, peak demand periods, and high-value customers, enabling better inventory planning, marketing strategies, and service optimization.  
+
+## Dashboard Preview
+![FoodHub Dashboard](FoodHubDashboard.png) <!-- Replace with your screenshot file -->
+
+## Project Link
+[View Project on GitHub](#) <!-- Replace with your actual repo link -->
+
