@@ -14,6 +14,7 @@ Explored ordering patterns, peak times, and menu performance.
 ### 2. Excel Data Analysis Dashboard
 - Tools: Excel, Power Query, PivotTables
 - Created a sales dashboard to monitor KPIs
+  
 ![FoodHub Dashboard](Sales%20Dashboard.png)
 *Preview of the dashboard that visualizes sales and insights.*
 
