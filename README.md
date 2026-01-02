@@ -12,11 +12,27 @@ Results-driven professional with expertise in data analysis, visualization, and 
 
 ## Projects
 
-### 1. FoodHub Order Analysis
-**Tools:** Python, pandas, matplotlib  
-Explored ordering patterns, peak times, and menu performance.
+# Coffee Sales Dashboard
 
+**Tools:** Excel, PivotTables, Charts, Slicers
 
+## Project Overview
+Developed an interactive sales dashboard to track and analyze coffee sales across multiple regions, customer segments, and product types over time. Users can filter by order date, roast type, package size, and loyalty card status to uncover trends and insights.
+
+## Key Features
+- **Total Sales Over Time:** Monthly sales trends for Arabica, Robusta, Liberica, and Excelsa coffee types.
+- **Sales by Country:** Identifies top-performing markets.
+- **Top Customers:** Highlights the top 5 revenue-generating customers.
+- **Interactive Filters:** Slicers for roast type, size, and loyalty card participation.
+
+## Impact / Use Case
+Helps management quickly identify sales trends, high-value customers, and top-performing markets, supporting informed decisions on inventory, promotions, and customer engagement.
+
+## Dashboard Preview
+![Coffee Sales Dashboard](CoffeeSalesDashboard.png)
+
+## Project Link
+[View Project on GitHub](#) <!-- Replace with actual repo link -->
 
 
 
