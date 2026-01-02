@@ -1,5 +1,3 @@
-# Kahad Adamu - Data Analyst Portfolio
-
 ## About Me
 Data analyst with experience in Python, SQL, Excel, and Power BI. I analyze data to produce actionable insights for business decisions.
 
