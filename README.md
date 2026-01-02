@@ -7,14 +7,14 @@ Results-driven professional with expertise in data analysis, visualization, and 
 **Tools:** Python, pandas, matplotlib  
 Explored ordering patterns, peak times, and menu performance.
 
-![FoodHub Dashboard](Sales%20Dashboard.png)
-*Preview of the dashboard that visualizes sales and insights.*
 
-🔗 [View Project on GitHub](https://github.com/Kahad-A/FoodHub-Order-Analysis)
 
 
 
 ### 2. Excel Data Analysis Dashboard
 - Tools: Excel, Power Query, PivotTables
 - Created a sales dashboard to monitor KPIs
-- [View Project](https://github.com/Kahad-A/Excel_Data_Analysis_Dashboard)
+![FoodHub Dashboard](Sales%20Dashboard.png)
+*Preview of the dashboard that visualizes sales and insights.*
+
+🔗 [View Project on GitHub](https://github.com/Kahad-A/FoodHub-Order-Analysis)
