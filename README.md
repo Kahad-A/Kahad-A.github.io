@@ -1,6 +1,13 @@
 ## About Me
 Results-driven professional with expertise in data analysis, visualization, and SQL, and hands-on experience turning complex, multi-source datasets into actionable insights for organizational decision-making. Skilled in building dashboards, reports, and ad-hoc analyses for non-technical stakeholders. Experienced in supervised and unsupervised machine learning, predictive modeling, deep learning, network analysis, and spatial data science. Highly motivated, quick to learn new technologies, and committed to contributing to collaborative business intelligence and analytics initiatives.
 
+## 🎓 Education
+- M.S. in Data Science, University X, 2022
+- B.Sc. in Statistics, University Y, 2018
+
+## 💼 Resume / CV
+[Download my CV](assets/Kahad_CV.pdf)
+
 ## Projects
 
 ### 1. FoodHub Order Analysis
