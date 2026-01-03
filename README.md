@@ -29,7 +29,7 @@ Developed an interactive sales dashboard to track and analyze coffee sales acros
 Helps management quickly identify sales trends, high-value customers, and top-performing markets, supporting informed decisions on inventory, promotions, and customer engagement.
 
 ## Dashboard Preview
-![Coffee Sales Dashboard](sales_dashboard.png)
+![Coffee Sales Dashboard](https://github.com/Kahad-A/Excel_Data_Analysis_Dashboard/blob/main/sales_dashboard.png)
 
 ## Project Link
 [View Project on GitHub](https://github.com/Kahad-A/Excel_Data_Analysis_Dashboard) <!-- Replace with actual repo link -->
