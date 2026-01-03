@@ -7,6 +7,8 @@ Results-driven professional with expertise in data analysis, visualization, and 
 - MSc in Urban Development Planning, University College London (UCL), September 2016
 - B.Sc (Hons.) in Land Economy, Kwame Nkrumah University of Science and Technology (KNUST), May 2014
 
+---
+
 ## Projects
 
 # Coffee Sales Dashboard
@@ -54,4 +56,27 @@ Helps FoodHub management and operations teams identify ordering trends, peak dem
 
 ## Project Link
 [View Project on GitHub](#) <!-- Replace with your actual repo link -->
+
+---
+
+## British Airways Customer Reviews Dashboard
+
+**Tools:** Tableau, Data Visualization, Interactive Dashboards, Geospatial Analysis
+
+### Project Overview
+Built an interactive Tableau dashboard to analyze British Airways customer review data across time, geography, aircraft types, and service quality dimensions. The dashboard enables exploration of overall ratings and detailed service metrics, including cabin staff service, food and beverages, ground service, seat comfort, and value for money.
+
+### Key Features
+- Monthly trends in average overall customer ratings
+- Geographic distribution of ratings by country
+- Aircraft-level comparison of ratings and review volumes
+- Service quality breakdown across multiple dimensions
+- Interactive filters for traveler type, seat type, aircraft group, continent, date range, and selected metric
+
+### Impact / Use Case
+Supports airline analytics and customer experience teams in identifying satisfaction trends, service performance gaps, and aircraft-specific issues, enabling data-driven decisions to improve service quality and customer satisfaction.
+
+### Dashboard Preview
+![British Airways Reviews Dashboard](british_airways_dashboard.png)
+
 
