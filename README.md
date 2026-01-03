@@ -7,9 +7,6 @@ Results-driven professional with expertise in data analysis, visualization, and 
 - MSc in Urban Development Planning, University College London (UCL), September 2016
 - B.Sc (Hons.) in Land Economy, Kwame Nkrumah University of Science and Technology (KNUST), May 2014
 
-## 💼 Resume / CV
-[Download my CV](assets/Kahad_CV.pdf)
-
 ## Projects
 
 # Coffee Sales Dashboard
