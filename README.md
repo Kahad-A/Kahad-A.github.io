@@ -55,7 +55,7 @@ Helps FoodHub management and operations teams identify ordering trends, peak dem
 ![FoodHub Dashboard](FoodHubDashboard.png) <!-- Replace with your screenshot file -->
 
 ## Project Link
-[View Project on GitHub](#) <!-- Replace with your actual repo link -->
+[View Project on GitHub](https://github.com/Kahad-A/FoodHub-Order-Analysis/blob/main/FoodHub%20Order.ipynb) <!-- Replace with your actual repo link -->
 
 ---
 
