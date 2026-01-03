@@ -77,7 +77,7 @@ Built an interactive Tableau dashboard to analyze British Airways customer revie
 Supports airline analytics and customer experience teams in identifying satisfaction trends, service performance gaps, and aircraft-specific issues, enabling data-driven decisions to improve service quality and customer satisfaction.
 
 ### Dashboard Preview
-![British Airways Reviews Dashboard](https://raw.githubusercontent.com/Kahad-A/British-Airways-Reviews/main/british_airways_dashboard.png)
+![British Airways Reviews Dashboard](https://github.com/Kahad-A/British-Airways-Reviews/blob/main/british_airways_reviews.png)
 
 ### Project Link
 [View Project on GitHub](https://github.com/Kahad-A/British-Airways-Reviews)
