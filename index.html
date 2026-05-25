@@ -1,348 +1,177 @@
-import { Github, Mail, ExternalLink, Database, Globe, BookOpen } from "lucide-react";
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kahad Adamu Webpage</title>
 
-export default function PortfolioWebsite() {
-  const featuredProjects = [
-    {
-      title: "Watershed Governance Research",
-      description:
-        "Research on institutional externalities, collective action, and governance systems using the Ecology of Games Framework.",
-      tech: ["Governance", "Research", "Policy Analysis"],
-      link: "https://github.com/Kahad-A",
-      gradient: "from-emerald-400 to-cyan-500",
-    },
-    {
-      title: "Environmental Governance Analytics",
-      description:
-        "Data-driven projects examining collaboration structures, watershed systems, and institutional interactions.",
-      tech: ["Python", "GIS", "Environmental Systems"],
-      link: "https://github.com/Kahad-A",
-      gradient: "from-cyan-400 to-blue-500",
-    },
-    {
-      title: "Interactive Academic Dashboards",
-      description:
-        "Visualization dashboards and analytical tools for environmental policy and governance research.",
-      tech: ["React", "Visualization", "Dashboards"],
-      link: "https://github.com/Kahad-A",
-      gradient: "from-violet-400 to-fuchsia-500",
-    },
-  ];
+    <style>
+        body {
+            background-color: #FFEBCD;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #222;
+        }
 
-  const publications = [
-    {
-      title: "Institutional Externalities in Watershed Governance",
-      summary:
-        "Research examining how institutional arrangements create process-based and payoff externalities within collaborative watershed governance systems.",
-    },
-    {
-      title: "Collective Action & Governance Networks",
-      summary:
-        "Exploring the role of social capital, collaboration, and governance dynamics in environmental decision-making.",
-    },
-    {
-      title: "Ecology of Games Framework Applications",
-      summary:
-        "Analyzing multi-forum governance interactions and actor-level dynamics in environmental governance contexts.",
-    },
-  ];
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            color: #000;
+        }
 
-  return (
-    <div className="min-h-screen bg-[#020617] text-white overflow-hidden">
-      {/* Background Effects */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-emerald-500/20 blur-3xl rounded-full" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-3xl rounded-full" />
-        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-violet-500/10 blur-3xl rounded-full" />
-      </div>
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+        }
 
-      {/* Hero */}
-      <section className="relative max-w-7xl mx-auto px-6 pt-24 pb-28">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 mb-6">
-              <Globe size={16} />
-              <span className="text-sm tracking-wide uppercase">
-                Researcher • Environmental Governance • Policy Analytics
-              </span>
-            </div>
+        h3 {
+            margin-top: 30px;
+            color: #2c3e50;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
 
-            <h1 className="text-6xl lg:text-8xl font-black leading-none mb-8 bg-gradient-to-r from-white via-cyan-200 to-emerald-300 bg-clip-text text-transparent">
-              Kahad
-              <br />
-              Adamu
-            </h1>
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
 
-            <p className="text-slate-300 text-xl leading-relaxed max-w-2xl mb-10">
-              PhD researcher focused on watershed governance,
-              institutional externalities, collective action, and
-              computational environmental policy analysis.
-            </p>
+        ol {
+            margin-left: 20px;
+        }
 
-            <div className="flex flex-wrap gap-5">
-              <a
-                href="https://github.com/Kahad-A"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-500 text-slate-950 font-bold hover:scale-105 transition"
-              >
-                <Github size={20} />
-                GitHub Profile
-              </a>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 10px;
+        }
 
-              <a
-                href="#projects"
-                className="px-8 py-4 rounded-2xl border border-slate-700 bg-slate-900/60 hover:border-cyan-400 hover:bg-slate-900 transition"
-              >
-                Explore Projects
-              </a>
-            </div>
-          </div>
+        table, td {
+            border: 1px solid #444;
+        }
 
-          {/* Stats Card */}
-          <div className="relative">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl p-10 shadow-2xl">
-              <div className="grid grid-cols-2 gap-6 mb-10">
-                <div>
-                  <p className="text-5xl font-black text-emerald-300">PhD</p>
-                  <p className="text-slate-400 mt-2">Research Focus</p>
-                </div>
+        td {
+            padding: 8px;
+        }
 
-                <div>
-                  <p className="text-5xl font-black text-cyan-300">EoG</p>
-                  <p className="text-slate-400 mt-2">Framework Analysis</p>
-                </div>
-              </div>
+        a {
+            color: #0066cc;
+        }
 
-              <div className="space-y-5">
-                {[
-                  "Watershed Governance",
-                  "Institutional Externalities",
-                  "Environmental Policy",
-                  "Collective Action",
-                  "Governance Networks",
-                  "Social Capital",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center justify-between border-b border-white/10 pb-3"
-                  >
-                    <span className="text-slate-300">{item}</span>
-                    <span className="w-3 h-3 rounded-full bg-emerald-400" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        a:hover {
+            color: #003366;
+        }
 
-      {/* About */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div>
-            <p className="uppercase tracking-[0.3em] text-sm text-cyan-300 mb-5">
-              About Me
-            </p>
+        img {
+            border: 2px solid #333;
+            margin-top: 10px;
+        }
 
-            <h2 className="text-5xl font-black leading-tight mb-8">
-              Bridging Research,
-              <span className="text-emerald-300"> Technology</span>, and
-              Governance
-            </h2>
-          </div>
+        form {
+            margin-top: 10px;
+            padding: 10px;
+            background: #fff3e0;
+            display: inline-block;
+            border-radius: 8px;
+        }
 
-          <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-            <p>
-              My work investigates how institutional structures and
-              collaborative governance systems influence collective
-              environmental action.
-            </p>
+        blockquote {
+            font-style: italic;
+            background: #fff;
+            padding: 10px;
+            border-left: 5px solid #999;
+            margin-top: 10px;
+        }
 
-            <p>
-              I specialize in watershed governance, institutional
-              externalities, environmental justice, and governance network
-              analysis using interdisciplinary computational and policy
-              methods.
-            </p>
+        .emoji {
+            font-size: 24px;
+        }
+    </style>
 
-            <p>
-              Beyond academic research, I develop analytical dashboards,
-              interactive data visualizations, and governance tools to help
-              communicate complex environmental systems.
-            </p>
-          </div>
-        </div>
-      </section>
+    <script>
+        window.alert("This is Kahad's webpage");
+    </script>
+</head>
 
-      {/* Projects */}
-      <section id="projects" className="py-28 border-y border-white/10 bg-white/[0.03]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
-            <div>
-              <p className="uppercase tracking-[0.3em] text-sm text-emerald-300 mb-4">
-                Featured Work
-              </p>
+<body>
 
-              <h2 className="text-5xl font-black">
-                Research Projects & Dashboards
-              </h2>
-            </div>
+<h1>Kahad Adamu</h1>
 
-            <a
-              href="https://github.com/Kahad-A?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-cyan-300 hover:text-cyan-200 transition"
-            >
-              <ExternalLink size={18} />
-              View All Repositories
-            </a>
-          </div>
+<h2>
+229 Hayes Hall, SUNY-Buffalo, South Campus
+</h2>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {featuredProjects.map((project) => (
-              <div
-                key={project.title}
-                className="group rounded-[2rem] border border-white/10 bg-slate-900/60 backdrop-blur-xl overflow-hidden hover:-translate-y-2 transition duration-500"
-              >
-                <div className={`h-2 bg-gradient-to-r ${project.gradient}`} />
+<h3>Research Interests</h3>
+<ol>
+    <li>Political Ecology</li>
+    <li>Environmental Justice</li>
+    <li>Environmental Governance</li>
+    <li>Affordable Housing</li>
+</ol>
 
-                <div className="p-8">
-                  <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 border border-white/10">
-                    <Database className="text-cyan-300" />
-                  </div>
+<h3>Educational History</h3>
+<p>PhD Urban and Regional Planning, SUNY-Buffalo (expected May 2025)</p>
+<p>MSc Urban Development Planning, University College London, Nov. 2016</p>
+<p>BSc (Hons.) Land Economy, KNUST, Ghana, June 2014</p>
 
-                  <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-300 transition">
-                    {project.title}
-                  </h3>
+<h3>Work History</h3>
+<p>Research Aide and GIS Expert, Food Lab, SUNY-Buffalo | June 2022 - Present</p>
+<p>Teaching Assistant, SUNY-Buffalo | August 2021 - Present</p>
+<p>Lab Instructor, Research Methods for Planners | 2021 - Present</p>
 
-                  <p className="text-slate-300 leading-relaxed mb-8">
-                    {project.description}
-                  </p>
+<h3>Awards and Scholarships</h3>
+<p>Presidential Fellow (2021)</p>
+<p>Commonwealth Shared Scholar</p>
 
-                  <div className="flex flex-wrap gap-3 mb-8">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+<h3>Publications</h3>
+<p>
+Boamah, E.F., Watson, V., Amoako, C., Grooms, W., Osei, D., Kwadwo, V.O.,
+Nyamekye, A.B., <b>Adamu, K.</b> & Appiah, G.K. (2022)
+Planning Corruption or Corrupting Planning?
+Journal of the American Planning Association, 88(3), 377–391.
+</p>
 
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-emerald-300 hover:text-white transition"
-                  >
-                    Explore Repository
-                    <ExternalLink size={16} />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+<h3>Social Network Portfolio</h3>
+<img src="Final.png" height="150" width="200">
 
-      {/* Publications */}
-      <section className="max-w-7xl mx-auto px-6 py-28">
-        <div className="mb-16">
-          <p className="uppercase tracking-[0.3em] text-sm text-violet-300 mb-4">
-            Research Focus
-          </p>
+<h3>Link to Publication</h3>
+<a href="https://doi.org/10.1080/01944363.2021.1987969" target="_blank">
+Planning Corruption or Corrupting Planning
+</a>
 
-          <h2 className="text-5xl font-black">
-            Publications & Academic Research
-          </h2>
-        </div>
+<h3>Courses Taught</h3>
+<table>
+    <tr>
+        <td><b>Course</b></td>
+        <td><b>Year</b></td>
+    </tr>
+    <tr>
+        <td>Vision of the City</td>
+        <td>Spring 2022</td>
+    </tr>
+    <tr>
+        <td>Environmental Design</td>
+        <td>Spring 2022</td>
+    </tr>
+    <tr>
+        <td>Research Methods for Planners</td>
+        <td>Fall 2022</td>
+    </tr>
+</table>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {publications.map((publication) => (
-            <div
-              key={publication.title}
-              className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-slate-900 to-slate-950 p-8 hover:border-violet-400/40 transition"
-            >
-              <BookOpen className="text-violet-300 mb-6" size={32} />
+<h3>Login Form</h3>
+<form>
+    Username: <input type="text"><br><br>
+    Password: <input type="password"><br><br>
+    <button type="button">Login</button>
+</form>
 
-              <h3 className="text-2xl font-bold mb-5 leading-snug">
-                {publication.title}
-              </h3>
+<h3>Quote</h3>
+<blockquote>
+    "Planning involves the inclusion of multiple actors, stakeholders or citizens in decision-making where everyone's interests is considered in the process."
+</blockquote>
 
-              <p className="text-slate-300 leading-relaxed">
-                {publication.summary}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+<h3>Thank you and have fun</h3>
+<p class="emoji">😀😀😀😀</p>
 
-      {/* Contact */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-emerald-500/10 via-cyan-500/10 to-violet-500/10 backdrop-blur-xl p-14 text-center">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.12),transparent_40%)]" />
-
-          <div className="relative z-10">
-            <p className="uppercase tracking-[0.3em] text-sm text-cyan-300 mb-5">
-              Contact
-            </p>
-
-            <h2 className="text-5xl font-black mb-8">
-              Let’s Collaborate
-            </h2>
-
-            <p className="text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed mb-10">
-              Open to interdisciplinary collaborations in environmental
-              governance, policy analysis, governance systems research, and
-              computational environmental studies.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-5">
-              <a
-                href="https://github.com/Kahad-A"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 px-8 py-4 rounded-2xl bg-white text-slate-950 font-bold hover:scale-105 transition"
-              >
-                <Github size={20} />
-                GitHub
-              </a>
-
-              <a
-                href="mailto:your-email@example.com"
-                className="flex items-center gap-3 px-8 py-4 rounded-2xl border border-white/20 hover:bg-white/10 transition"
-              >
-                <Mail size={20} />
-                Email Me
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 py-10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400">
-          <p>© 2026 Kahad Adamu • Research Portfolio</p>
-
-          <div className="flex items-center gap-6">
-            <a
-              href="https://github.com/Kahad-A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-emerald-300 transition"
-            >
-              GitHub
-            </a>
-
-            <a href="#" className="hover:text-cyan-300 transition">
-              Google Scholar
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+</body>
+</html>
