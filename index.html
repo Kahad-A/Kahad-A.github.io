@@ -11,53 +11,54 @@
       font-family: Arial, sans-serif;
       background: #f7f7f7;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     header {
       background: #111;
       color: white;
-      padding: 40px 20px;
+      padding: 25px 15px;
+      text-align: center;
     }
 
     .header-container {
-      max-width: 1000px;
-      margin: auto;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .header-container img {
-      width: 140px;
-      height: 140px;
+    .profile-pic {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid white;
+      border: 3px solid #ddd;
     }
 
-    .header-text h1 {
+    header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 32px;
     }
 
-    .header-text p {
-      margin-top: 10px;
-      font-size: 18px;
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
       color: #ccc;
     }
 
     nav {
       text-align: center;
       background: white;
-      padding: 10px;
+      padding: 8px;
       position: sticky;
       top: 0;
       border-bottom: 1px solid #ddd;
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
@@ -66,66 +67,72 @@
     section {
       max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 25px 20px;
     }
 
     h2 {
-      border-left: 5px solid #111;
-      padding-left: 10px;
-      margin-bottom: 20px;
+      border-left: 4px solid #111;
+      padding-left: 8px;
+      margin-bottom: 12px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+      gap: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       background: #111;
       color: white;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     .tag {
       display: inline-block;
       background: #eee;
-      padding: 5px 10px;
-      margin: 5px 5px 0 0;
-      border-radius: 5px;
-      font-size: 12px;
+      padding: 4px 8px;
+      margin: 3px;
+      border-radius: 4px;
+      font-size: 11px;
     }
 
     ul {
       padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .small {
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER WITH PHOTO -->
 <header>
   <div class="header-container">
+    <img class="profile-pic"
+      src="https://raw.githubusercontent.com/Kahad-A/Kahad-A.github.io/main/Kahad%20Adamu%20Passport%20Photo.jpg"
+      alt="Kahad Adamu, PhD">
 
-    <img src="https://raw.githubusercontent.com/Kahad-A/Kahad-A.github.io/main/Kahad%20Adamu%20Passport%20Photo.jpg"
-         alt="Kahad Adamu, PhD">
-
-    <div class="header-text">
+    <div>
       <h1>Kahad Adamu, PhD</h1>
       <p>Data Scientist | Urban Development Planner | Environmental Governance | Land Economist</p>
     </div>
-
   </div>
 </header>
 
@@ -136,20 +143,17 @@
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
-
-  <div class="card">
+  <div class="card small">
     <p>
       Data Scientist and researcher specializing in environmental governance,
-      political ecology, and urban development. My work focuses on how institutions,
-      actors, and environmental systems interact to shape sustainable development outcomes.
+      political ecology, and urban development. My work focuses on institutional dynamics,
+      collaborative governance, and socio-environmental systems.
     </p>
 
     <p>
-      I use data-driven methods, spatial analysis (GIS), and computational modeling to
-      understand complex socio-environmental systems.
+      I apply data science, GIS, and computational modeling to real-world sustainability problems.
     </p>
 
     <div>
@@ -160,96 +164,81 @@
       <span class="tag">Urban Planning</span>
     </div>
   </div>
+
+  <div class="card">
+    <b>CV & Resume</b><br/>
+    <a href="CV.pdf" target="_blank">Download CV</a> |
+    <a href="Resume.pdf" target="_blank">Download Resume</a>
+  </div>
 </section>
 
-<!-- RESEARCH -->
 <section id="research">
   <h2>Research & Publications</h2>
 
   <div class="card">
-    <p><b>Google Scholar Profile:</b>
-      <a href="https://scholar.google.com/citations?user=47E_dOkAAAAJ&hl=en&oi=ao" target="_blank">
-        View Profile
-      </a>
-    </p>
+    <b>Google Scholar:</b>
+    <a href="https://scholar.google.com/citations?user=47E_dOkAAAAJ&hl=en&oi=ao" target="_blank">
+      View Profile
+    </a>
   </div>
 
   <div class="card">
-    <h3>Selected Publications</h3>
+    <h3>Selected Publications (Full References)</h3>
 
-    <ul>
+    <ul class="small">
       <li>
-        <strong>Adamu, K. (2026)</strong><br>
-        Institutional Externalities and Collaborative Governance in the Cuyahoga River Watershed (CRW).<br>
-        <em>Environmental Policy and Governance, 36(2), 280–296.</em>
+        Adamu, K. (2026). <i>Institutional Externalities and Collaborative Governance in the Cuyahoga River Watershed (CRW)</i>.
+        Environmental Policy and Governance, 36(2), 280–296.
       </li>
 
       <li>
-        <strong>Judelsohn, A., Frimpong Boamah, E., Adamu, K., Yin, F., Paltseva, A., Kordas, K., et al. (2025)</strong><br>
-        Envisioning Healthy Soil Futures: Planning and Policy Inertia in Addressing Soil Contamination in a Postindustrial City.<br>
-        <em>Journal of Planning Education and Research.</em>
+        Judelsohn, A., Frimpong Boamah, E., Adamu, K., Yin, F., Paltseva, A., Kordas, K., et al. (2025).
+        <i>Envisioning Healthy Soil Futures: Planning and Policy Inertia in Addressing Soil Contamination in a Postindustrial City</i>.
+        Journal of Planning Education and Research.
       </li>
 
       <li>
-        <strong>Boamah, E. F., Yeboah, T., Adamu, K., Yin, F., Yeleliere, E., Appai, T. P., & Twum, K. O. (2025)</strong><br>
-        State-mandated decentralized irrigation reforms: (re)thinking Africa’s irrigation commons using the state-reinforced self-governance framework.<br>
-        <em>Ecology and Society, 30(2).</em>
+        Boamah, E. F., Yeboah, T., Adamu, K., Yin, F., Yeleliere, E., Appai, T. P., & Twum, K. O. (2025).
+        <i>State-mandated decentralized irrigation reforms: (re)thinking Africa’s irrigation commons</i>.
+        Ecology and Society, 30(2).
       </li>
 
       <li>
-        <strong>Adamu, K., Boamah, E. F., & Siaw-Asamoah, D. (2025)</strong><br>
-        Infrastructural violence and urban development in African cities: The case of Takoradi Central Market in Ghana.<br>
-        <em>Habitat International, 155, 103232.</em>
+        Adamu, K., Boamah, E. F., & Siaw-Asamoah, D. (2025).
+        <i>Infrastructural violence and urban development in African cities</i>.
+        Habitat International, 155, 103232.
       </li>
     </ul>
   </div>
 
-  <div class="card">
-    <b>Citations Summary</b>
-    <p>
-      Total citations: (add from Google Scholar)<br/>
-      h-index: (add)<br/>
-      i10-index: (add)
-    </p>
-  </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2>GitHub Projects</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Detecting Facial Emotions Using CNN</h3>
-      <p>
-        Facial expression recognition using Deep Learning techniques including CNN,
-        VGG16, ResNet, and EfficientNet. The model classifies emotions such as happy,
-        sad, neutral, and surprise using training, validation, and test datasets.
-      </p>
+      <h3>Facial Emotion Detection (CNN)</h3>
+      <p>Deep learning model using CNN, VGG16, ResNet, EfficientNet for emotion classification.</p>
+      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu" target="_blank">View Project</a>
     </div>
 
     <div class="card">
-      <h3>Documentation RAG Q&A Chatbot</h3>
-      <p>
-        A Retrieval-Augmented Generation system for Power BI documentation,
-        enabling natural language querying for analysts and improving decision-making
-        efficiency.
-      </p>
+      <h3>RAG Q&A Chatbot for Power BI Docs</h3>
+      <p>Retrieval-Augmented Generation system for querying documentation using natural language.</p>
+      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu2" target="_blank">View Project</a>
     </div>
 
     <div class="card">
-      <h3>Multi-Agent RAG Collaborative System</h3>
-      <p>
-        A multi-agent AI system for automated competitor analysis and business intelligence
-        using retrieval-augmented generation techniques.
-      </p>
+      <h3>Multi-Agent RAG System</h3>
+      <p>Automated competitor analysis system using multi-agent LLM architecture.</p>
+      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu2" target="_blank">View Project</a>
     </div>
 
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
 
@@ -264,7 +253,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Kahad Adamu, PhD</p>
+  © 2026 Kahad Adamu, PhD
 </footer>
 
 </body>
