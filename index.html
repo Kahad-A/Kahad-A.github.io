@@ -11,22 +11,39 @@
       font-family: Arial, sans-serif;
       background: #f7f7f7;
       color: #222;
-      line-height: 1;
+      line-height: 1.6;
     }
 
     header {
       background: #111;
       color: white;
       padding: 40px 20px;
-      text-align: center;
     }
 
-    header h1 {
+    .header-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .header-container img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    .header-text h1 {
       margin: 0;
       font-size: 36px;
     }
 
-    header p {
+    .header-text p {
       margin-top: 10px;
       font-size: 18px;
       color: #ccc;
@@ -94,10 +111,19 @@
 </head>
 
 <body>
-  
+
 <header>
-  <h1>Kahad Adamu, PhD</h1>
-  <p>Data Scientist | Urban Development Planner | Environmental Governance | Land Economist</p>
+  <div class="header-container">
+
+    <img src="https://raw.githubusercontent.com/Kahad-A/Kahad-A.github.io/main/Kahad%20Adamu%20Passport%20Photo.jpg"
+         alt="Kahad Adamu, PhD">
+
+    <div class="header-text">
+      <h1>Kahad Adamu, PhD</h1>
+      <p>Data Scientist | Urban Development Planner | Environmental Governance | Land Economist</p>
+    </div>
+
+  </div>
 </header>
 
 <nav>
@@ -106,29 +132,19 @@
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
+
 <section id="about">
   <h2>About</h2>
+
   <div class="card">
-      <!-- PROFILE PHOTO (ADD HERE) -->
-  <div style="text-align:center; margin-bottom:15px;">
-    <img src="https://raw.githubusercontent.com/Kahad-A/Kahad-A.github.io/main/Kahad%20Adamu%20Passport%20Photo.jpg" 
-         alt="Kahad Adamu, PhD"
-         style="
-           width:140px;
-           height:140px;
-           border-radius:50%;
-           object-fit:cover;
-           border:3px solid #ddd;
-         ">
-  </div>
     <p>
-      Data Scientist and researcher specializing in environmental governance, 
-      political ecology, and urban development. My work focuses on how institutions, 
+      Data Scientist and researcher specializing in environmental governance,
+      political ecology, and urban development. My work focuses on how institutions,
       actors, and environmental systems interact to shape sustainable development outcomes.
     </p>
 
     <p>
-      I use data-driven methods, spatial analysis (GIS), and computational modeling to 
+      I use data-driven methods, spatial analysis (GIS), and computational modeling to
       understand complex socio-environmental systems.
     </p>
 
@@ -146,93 +162,56 @@
   <h2>Research & Publications</h2>
 
   <div class="card">
-    <p><b>Google Scholar Profile:</b> <a href="https://scholar.google.com/citations?user=47E_dOkAAAAJ&hl=en&oi=ao" target="_blank">View Profile</a></p>
-  </div> 
-<div class="card publications-card">
-  <h3>Selected Publications</h3>
-
-  <ul class="publication-list">
-    <li>
-      <strong>Adamu, K. (2026)</strong><br>
-      Institutional Externalities and Collaborative Governance in the Cuyahoga River Watershed (CRW).<br>
-      <em>Environmental Policy and Governance, 36(2), 280–296.</em>
-    </li>
-
-    <li>
-      <strong>Judelsohn, A., Frimpong Boamah, E., Adamu, K., Yin, F., Paltseva, A., Kordas, K., et al. (2025)</strong><br>
-      Envisioning Healthy Soil Futures: Planning and Policy Inertia in Addressing Soil Contamination in a Postindustrial City.<br>
-      <em>Journal of Planning Education and Research.</em>
-    </li>
-
-    <li>
-      <strong>Boamah, E. F., Yeboah, T., Adamu, K., Yin, F., Yeleliere, E., Appai, T. P., & Twum, K. O. (2025)</strong><br>
-      State-mandated decentralized irrigation reforms: (re)thinking Africa’s irrigation commons using the state-reinforced self-governance framework.<br>
-      <em>Ecology and Society, 30(2).</em>
-    </li>
-
-    <li>
-      <strong>Adamu, K., Boamah, E. F., & Siaw-Asamoah, D. (2025)</strong><br>
-      Infrastructural violence and urban development in African cities: The case of Takoradi Central Market in Ghana.<br>
-      <em>Habitat International, 155, 103232.</em>
-    </li>
-  </ul>
-</div>
-
-  <div class="card">
-    <b>Citations Summary</b>
-    <p>
-      Total citations: (add from Google Scholar)<br/>
-      h-index: (add)<br/>
-      i10-index: (add)
+    <p><b>Google Scholar Profile:</b>
+      <a href="https://scholar.google.com/citations?user=47E_dOkAAAAJ&hl=en&oi=ao" target="_blank">
+        View Profile
+      </a>
     </p>
   </div>
+
+  <div class="card">
+    <h3>Selected Publications</h3>
+
+    <ul>
+      <li><b>Adamu, K. (2026)</b> — Institutional Externalities and Collaborative Governance in CRW.</li>
+      <li><b>Judelsohn et al. (2025)</b> — Envisioning Healthy Soil Futures.</li>
+      <li><b>Boamah et al. (2025)</b> — Irrigation reforms in Africa.</li>
+      <li><b>Adamu et al. (2025)</b> — Infrastructural violence in Ghana.</li>
+    </ul>
+  </div>
 </section>
+
 <section id="projects">
   <h2>GitHub Projects</h2>
 
   <div class="grid">
-
     <div class="card">
-      <h3>Detecting Facial Emotions Using Convolutional Neural Networks </h3>
-      <p>Since most emotional communication occurs through facial expressions and other visual cues, it is crucial to accurately 
-        interpret facial signals. Facial expression recognition is therefore vital in human-machine interaction. Consequently, 
-        accurately identifying facial emotions is critical in developing emotionally intelligent machines that can engage in more 
-        natural and effective interactions with humans. This can be helpful in understanding human behavior, diagnosing mental disorders, 
-        and improving virtual assistants for customer-facing businesses. The project intended to build a model that accurately detects 
-        facial emotions using Deep Learning and Artificial Intelligence techniques. The dataset consists of three sets: training, validation, 
-        and test, each with varying sizes. Each set contains four classes: happy, sad, neutral, and surprise. After performing exploration 
-        data analysis (EDA), the training set is the largest, with 15,109 images, and appears almost unbalanced. The validation set is imbalanced, 
-        whereas the test set is balanced, with 32 images per class. Convolutional neural networks and pre-trained or transfer learning techniques, 
-        such as VGG16, ResNet, and EfficientNet, were utilized in this project.
-</p>
-      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu" target="_blank">View Project</a>
+      <h3>Facial Emotion Recognition</h3>
+      <p>CNN + Transfer Learning (VGG16, ResNet, EfficientNet).</p>
     </div>
 
     <div class="card">
-      <h3>Documentation RAG Q&A Chatbot</h3>
-      <p>This project aims to build a Retrieval-Augmented Generation (RAG) system for Power BI, enabling analysts to query documentation 
-        in natural language and get precise, relevant answers. The solution reduces complexity, improves efficiency, and enhances 
-        decision-making by unlocking Power BI’s full potential. It also provides developers with hands-on experience in creating RAG 
-        applications for broader business use cases.</p>
-      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu2" target="_blank">View Project</a>
+      <h3>RAG Chatbot</h3>
+      <p>Power BI documentation assistant using RAG architecture.</p>
     </div>
 
     <div class="card">
-      <h3>Multi-Agent RAG Collaborative System</h3>
-      <p>This project aims to build a Multi-Agent Retrieval-Augmented Generation (RAG) System for automated competitor analysis, 
-        enabling efficient, accurate, and scale-able insight generation. The solution minimizes manual effort, enhances reliability, and provides learners with 
-        hands-on experience in developing multi-agent RAG applications for real-world business intelligence use cases.</p>
-      <a href="https://www.mygreatlearning.com/eportfolio/kahad-adamu2" target="_blank">View Project</a>
+      <h3>Multi-Agent RAG System</h3>
+      <p>Automated competitor intelligence system.</p>
     </div>
-
   </div>
 </section>
+
 <section id="contact">
   <h2>Contact</h2>
 
   <div class="card">
     <p>Email: <b>kahadadamu1991@gmail.com</b></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kahad-adamu-phd-962643265" target="blanl">LinkedIn - Kahad Adamu, PhD</a></p>
+    <p>LinkedIn:
+      <a href="https://www.linkedin.com/in/kahad-adamu-phd-962643265" target="_blank">
+        Profile
+      </a>
+    </p>
   </div>
 </section>
 
