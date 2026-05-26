@@ -26,13 +26,11 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      justify-content: center;
-      text-align: left;
     }
 
     .header-container img {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid white;
@@ -68,7 +66,7 @@
     section {
       max-width: 1000px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
 
     h2 {
@@ -107,11 +105,16 @@
       border-radius: 5px;
       font-size: 12px;
     }
+
+    ul {
+      padding-left: 18px;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- HEADER WITH PHOTO -->
 <header>
   <div class="header-container">
 
@@ -133,6 +136,7 @@
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
 
@@ -158,6 +162,7 @@
   </div>
 </section>
 
+<!-- RESEARCH -->
 <section id="research">
   <h2>Research & Publications</h2>
 
@@ -173,35 +178,78 @@
     <h3>Selected Publications</h3>
 
     <ul>
-      <li><b>Adamu, K. (2026)</b> — Institutional Externalities and Collaborative Governance in CRW.</li>
-      <li><b>Judelsohn et al. (2025)</b> — Envisioning Healthy Soil Futures.</li>
-      <li><b>Boamah et al. (2025)</b> — Irrigation reforms in Africa.</li>
-      <li><b>Adamu et al. (2025)</b> — Infrastructural violence in Ghana.</li>
+      <li>
+        <strong>Adamu, K. (2026)</strong><br>
+        Institutional Externalities and Collaborative Governance in the Cuyahoga River Watershed (CRW).<br>
+        <em>Environmental Policy and Governance, 36(2), 280–296.</em>
+      </li>
+
+      <li>
+        <strong>Judelsohn, A., Frimpong Boamah, E., Adamu, K., Yin, F., Paltseva, A., Kordas, K., et al. (2025)</strong><br>
+        Envisioning Healthy Soil Futures: Planning and Policy Inertia in Addressing Soil Contamination in a Postindustrial City.<br>
+        <em>Journal of Planning Education and Research.</em>
+      </li>
+
+      <li>
+        <strong>Boamah, E. F., Yeboah, T., Adamu, K., Yin, F., Yeleliere, E., Appai, T. P., & Twum, K. O. (2025)</strong><br>
+        State-mandated decentralized irrigation reforms: (re)thinking Africa’s irrigation commons using the state-reinforced self-governance framework.<br>
+        <em>Ecology and Society, 30(2).</em>
+      </li>
+
+      <li>
+        <strong>Adamu, K., Boamah, E. F., & Siaw-Asamoah, D. (2025)</strong><br>
+        Infrastructural violence and urban development in African cities: The case of Takoradi Central Market in Ghana.<br>
+        <em>Habitat International, 155, 103232.</em>
+      </li>
     </ul>
+  </div>
+
+  <div class="card">
+    <b>Citations Summary</b>
+    <p>
+      Total citations: (add from Google Scholar)<br/>
+      h-index: (add)<br/>
+      i10-index: (add)
+    </p>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>GitHub Projects</h2>
 
   <div class="grid">
+
     <div class="card">
-      <h3>Facial Emotion Recognition</h3>
-      <p>CNN + Transfer Learning (VGG16, ResNet, EfficientNet).</p>
+      <h3>Detecting Facial Emotions Using CNN</h3>
+      <p>
+        Facial expression recognition using Deep Learning techniques including CNN,
+        VGG16, ResNet, and EfficientNet. The model classifies emotions such as happy,
+        sad, neutral, and surprise using training, validation, and test datasets.
+      </p>
     </div>
 
     <div class="card">
-      <h3>RAG Chatbot</h3>
-      <p>Power BI documentation assistant using RAG architecture.</p>
+      <h3>Documentation RAG Q&A Chatbot</h3>
+      <p>
+        A Retrieval-Augmented Generation system for Power BI documentation,
+        enabling natural language querying for analysts and improving decision-making
+        efficiency.
+      </p>
     </div>
 
     <div class="card">
-      <h3>Multi-Agent RAG System</h3>
-      <p>Automated competitor intelligence system.</p>
+      <h3>Multi-Agent RAG Collaborative System</h3>
+      <p>
+        A multi-agent AI system for automated competitor analysis and business intelligence
+        using retrieval-augmented generation techniques.
+      </p>
     </div>
+
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
 
